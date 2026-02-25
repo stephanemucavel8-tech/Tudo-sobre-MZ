@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidades de Moçambique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0077cc;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #e8f0fe;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Universidades de Moçambique</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Cidade</th>
+                <th>Site Oficial</th>
+            </tr>
+        </thead>
+        <tbody id="universidadesTable">
+            <!-- Conteúdo será adicionado via JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        const universidades = [
+            {
+                nome: "Universidade Eduardo Mondlane",
+                tipo: "Pública",
+                cidade: "Maputo",
+                site: "https://www.uem.mz/"
+            },
+            {
+                nome: "Universidade Pedagógica",
+                tipo: "Pública",
+                cidade: "Maputo",
+                site: "https://www.up.ac.mz/"
+            },
+            {
+                nome: "Universidade Lúrio",
+                tipo: "Pública",
+                cidade: "Nampula",
+                site: "https://www.unilurio.ac.mz/"
+            },
+            {
+                nome: "Universidade Católica de Moçambique",
+                tipo: "Privada",
+                cidade: "Maputo (vários campi)",
+                site: "https://www.ucm.ac.mz/"
+            },
+            {
+                nome: "Universidade Politécnica",
+                tipo: "Privada",
+                cidade: "Maputo",
+                site: "https://www.upol.ac.mz/"
+            },
+            {
+                nome: "Universidade Jean Piaget de Moçambique",
+                tipo: "Privada",
+                cidade: "Maputo",
+                site: "https://www.ipiaget.org.mz/"
+            },
+            {
+                nome: "Universidade Save",
+                tipo: "Privada",
+                cidade: "Inhambane",
+                site: "#"
+            },
+            {
+                nome: "Universidade Zambeze",
+                tipo: "Pública",
+                cidade: "Beira",
+                site: "https://www.uz.ac.mz/"
+            }
+        ];
+
+        const tableBody = document.getElementById("universidadesTable");
+
+        universidades.forEach((uni, index) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${uni.nome}</td>
+                <td>${uni.tipo}</td>
+                <td>${uni.cidade}</td>
+                <td><a href="${uni.site}" target="_blank">Visitar</a></td>
+            `;
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>
