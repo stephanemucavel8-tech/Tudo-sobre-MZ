@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Sobre Nossa Cultura.COM.MZ</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth; /* Rolagem suave entre links */
+        }
+
+        /* BASE */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f4f6fb;
+            color: #231616;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* NAV */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav img {
+            max-width: 50px;
+            border-radius: 4px;
+        }
+
+        nav a {
+            color: #357abd;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #eef4ff;
+            color: #2a5a8a;
+            transform: translateY(-2px);
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: #357abd;
+            border-left: 6px solid #4a90e2;
+            padding-left: 15px;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* BOTÃO / LINK ESTILIZADO */
+        .btn-link {
+            display: inline-block;
+            background: #4a90e2;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-link:hover {
+            background: #357abd;
+        }
+
+        /* TABELAS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: white;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #eee;
+            text-align: left;
+        }
+
+        th {
+            background: #4a90e2;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* LISTA HISTORIAL */
+        .historial-list {
+            list-style: none;
+        }
+
+        .historial-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .historial-item:last-child {
+            border-bottom: none;
+        }
+
+        .emoji-title {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            nav { gap: 5px; }
+            nav a { font-size: 0.9rem; padding: 8px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="inicio">
+    <h1>Tudo Sobre Nossa Cultura Geral.MZ</h1>
+    <p>Conectando você às raízes de Moçambique de forma divertida</p>
+</header>
+
+<nav>
+    <!-- Substituir por imagem real quando disponível -->
+    <div style="background:#ddd; width:40px; height:30px; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:10px;">MZ</div>
+    <a href="#jogos">Jogos</a>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#historial">Historial</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#estado">Estado</a>
+    <a href="#ranking">Ranking</a>
+    <a href="#perfil">Perfil</a>
+</nav>
+
+<section id="jogos">
+    <h2>🎯 Jogos Educativos</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Quiz de Cultura Geral</h3>
+            <p>Teste seus conhecimentos sobre as províncias e tradições.</p>
+            <a href="quiz.html" class="btn-link">Jogar Agora</a>
+        </div>
+
+        <div class="card">
+            <h3>Verdadeiro ou Falso</h3>
+            <p>Desafie sua mente com fatos históricos rápidos.</p>
+            <a href="verdadeiro-falso.html" class="btn-link">Desafiar</a>
+        </div>
+    </div>
+</section>
+
+<section id="curiosidades">
+    <h2>💡 Curiosidades do Dia</h2>
+    <div class="card">
+        <table>
+            <tr><td>🇲🇿 <strong>Línguas:</strong> O português é oficial, mas existem mais de 40 línguas locais (Changana, Macua, etc).</td></tr>
+            <tr><td>👤 <strong>Origem:</strong> O nome "Moçambique" deriva do xeque árabe Mussa Bin Bique.</td></tr>
+            <tr><td>🏝️ <strong>Património:</strong> A Ilha de Moçambique é reconhecida pela UNESCO.</td></tr>
+            <tr><td>🔫 <strong>Bandeira:</strong> Única no mundo a exibir um fuzil AK-47 moderno.</td></tr>
+            <tr><td>🦐 <strong>Gastronomia:</strong> Famoso pela Matapa e pelo camarão grelhado com piri-piri.</td></tr>
+        </table>
+    </div>
+</section>
+
+<section id="historial">
+    <h2>📜 Historial de Moçambique</h2>
+    <div class="card">
+        <div class="historial-list">
+            <div class="historial-item">
+                <strong class="emoji-title">🏺 Período Pré-Colonial</strong>
+                <p>Habitado por povos Bantu, com fortes rotas comerciais no Índico envolvendo árabes e persas.</p>
+            </div>
+            <div class="historial-item">
+                <strong class="emoji-title">🌊 Chegada dos Portugueses (1498)</strong>
+                <p>Vasco da Gama aporta na costa, dando início a séculos de influência e colonização europeia.</p>
+            </div>
+            <div class="historial-item">
+                <strong class="emoji-title">✊ Luta de Libertação (1964–1974)</strong>
+                <p>Fundação da FRELIMO e início da luta armada para derrubar o regime colonial.</p>
+            </div>
+            <div class="historial-item">
+                <strong class="emoji-title">🇲🇿 Independência (1975)</strong>
+                <p>Proclamação da República Popular de Moçambique com Samora Machel como primeiro Presidente.</p>
+            </div>
+            <div class="historial-item">
+                <strong class="emoji-title">🕊️ Acordos de Paz (1992)</strong>
+                <p>Fim da guerra civil e início da era democrática multipartidária.</p>
+            </div>
+        </div>
+        <a href="#inicio" class="btn-link" style="background: #777;">Voltar ao Topo</a>
+    </div>
+</section>
+
+<section id="noticias">
+    <h2>📰 Notícias Frescas</h2>
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tema</th>
+                    <th>Estado / Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>CAN 2025</td><td>Análise do desempenho dos Mambas.</td></tr>
+                <tr><td>Ponta de Ouro</td><td>Atualizações sobre segurança turística.</td></tr>
+                <tr><td>Economia</td><td>Novas taxas municipais em Maputo.</td></tr>
+            </tbody>
+        </table>
+        <a href="noticias-completas.html" class="btn-link">Ler Todas as Notícias</a>
+    </div>
+</section>
+
+<section id="estado">
+    <h2>🏛️ Informações do Estado</h2>
+    <div class="card">
+        <p><strong>Presidente Eleito:</strong> Daniel Chapo</p>
+        <p><strong>Primeira-Ministra:</strong> Maria Benvinda Delfina Levi</p>
+        <br>
+        <table>
+            <tr><th>Ministério</th><th>Titular</th></tr>
+            <tr><td>Defesa Nacional</td><td>Cristovão Chume</td></tr>
+            <tr><td>Interior</td><td>Paulo Chachine</td></tr>
+            <tr><td>Saúde</td><td>Ussene Isse</td></tr>
+        </table>
+    </div>
+</section>
+
+<section id="ranking">
+    <h2>🏆 Ranking de Jogadores</h2>
+    <div class="card">
+        <ol style="margin-left: 20px;">
+            <li><strong>Welton</strong> - 1.200 Pts</li>
+            <li><strong>Lucas</strong> - 980 Pts</li>
+            <li><strong>Stephane</strong> - 870 Pts</li>
+        </ol>
+    </div>
+</section>
+
+<section id="perfil">
+    <h2>👤 Perfil do Usuário</h2>
+    <div class="card">
+        <p><strong>Nome:</strong> Visitante Curioso</p>
+        <p><strong>Nível:</strong> 10 (Iniciante)</p>
+        <p><strong>Pontos:</strong> 350</p>
+        <a href="editar-perfil.html" class="btn-link" style="background:#27ae60;">Editar Perfil</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Cultura Geral MZ - Todos os direitos reservados.</p>
+    <p><small>Ative as notificações para curiosidades diárias!</small></p>
+</footer>
+
+</body>
+</html>
